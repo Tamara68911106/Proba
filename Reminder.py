@@ -25,6 +25,12 @@ def set():# установка напоминания
             mb.showerror("Ошибка!", f"Произошла ошибка {e}")
 
 
+def play_snd():
+    pygame.mixer.init()
+    pygame.mixer.musoc.load("Korol_i_SHut_-_Kukla_kolduna_1671691.mp3")
+    pygame.mixer.music.play()
+
+
 window = Tk()
 window.title("Напомиание")
 label = Label(text = "Установите напоминание")
